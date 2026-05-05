@@ -53,6 +53,6 @@ export default defineConfig({
       : []),
   ],
   define: {
-    CONFIG: CONFIG,
+    CONFIG: JSON.stringify(CONFIG),
   },
 });
