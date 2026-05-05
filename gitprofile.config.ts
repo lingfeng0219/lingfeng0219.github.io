@@ -39,6 +39,7 @@ const CONFIG = {
             'Developed an autonomous mobile manipulation system using a LeoRover platform and myCobot robotic arm to detect, retrieve, and sort coloured objects in a controlled indoor environment. I built the target detection algorithms and integrated them with the perception-to-action pipeline, passing detected object positions through ROS2 to support navigation, target localisation, and vision-guided grasping. The system combined perception, navigation, and manipulation modules into an autonomous retrieval workflow and was tested under changing lighting, occlusion, and scene layouts.',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          link: 'https://github.com/lingfeng0219',
         },
         {
           title: 'Research on Machine Vision-based Water Surface Search and Rescue Target Detection Technology',
