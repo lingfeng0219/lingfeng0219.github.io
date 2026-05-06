@@ -76,19 +76,15 @@ const PublicationCard = ({
 
   const renderPublications = () => {
     return publications.map((item, index) => (
-      <a
-        className="card shadow-md card-sm bg-base-100 cursor-pointer"
-        key={index}
-        href={item.link}
-        target="_blank"
-        rel="noreferrer"
-      >
+      <div className="card shadow-md card-sm bg-base-100" key={index}>
         <div className="p-8 h-full w-full">
           <div className="flex items-center flex-col">
             <div className="w-full">
               <div className="px-4">
                 <div className="text-center w-full">
-                  <h2 className="font-medium opacity-60 mb-2">{item.title}</h2>
+                  <h2 className="text-lg sm:text-xl font-extrabold text-base-content leading-snug break-words mb-3">
+                    {item.title}
+                  </h2>
                   {item.conferenceName && (
                     <p className="text-base-content opacity-50 text-sm">
                       {item.conferenceName}
@@ -105,16 +101,38 @@ const PublicationCard = ({
                     </p>
                   )}
                   {item.description && (
-                    <p className="mt-2 text-base-content text-sm text-justify">
+                    <p className="mt-2 text-base-content text-sm text-justify whitespace-pre-line">
                       {item.description}
                     </p>
                   )}
+                  <div className="mt-4 flex justify-center gap-3">
+                    {item.link ? (
+                      <a
+                        className="btn btn-outline btn-sm rounded-none min-h-9 h-9 min-w-16 px-4"
+                        href={item.link}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Article
+                      </a>
+                    ) : null}
+                    {item.pdfLink ? (
+                      <a
+                        className="btn btn-outline btn-sm rounded-none min-h-9 h-9 min-w-16 px-4"
+                        href={item.pdfLink}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        PDF
+                      </a>
+                    ) : null}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </a>
+      </div>
     ));
   };
 

@@ -36,17 +36,25 @@ const CONFIG = {
         {
           title: 'Autonomous Object Retrieval System (LeoRover + Manipulator)',
           description:
-            'Developed an autonomous mobile manipulation system using a LeoRover platform and myCobot robotic arm to detect, retrieve, and sort coloured objects in a controlled indoor environment. I built the target detection algorithms and integrated them with the perception-to-action pipeline, passing detected object positions through ROS2 to support navigation, target localisation, and vision-guided grasping. The system combined perception, navigation, and manipulation modules into an autonomous retrieval workflow and was tested under changing lighting, occlusion, and scene layouts.',
+            '• Goal: Build a robot capable of autonomously navigating, detecting target objects, grasping them with a manipulator, and placing them into colour-matched bins within a fixed demonstration time.\n\n• My contribution: Developed the target detection algorithms and integrated them with the robotic arm and navigation system. Built the perception-to-action pipeline, allowing detected object positions to be passed through ROS2 to support navigation, target localisation, and vision-guided grasping.\n\n• Outcome: Integrated perception, navigation, and manipulation modules into a ROS2-based autonomous retrieval workflow, and tested system robustness under changes in lighting, occlusion, and scene layout.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://github.com/lingfeng0219',
+            '/leo.jpg',
+          link: 'https://github.com/Team4-UoM-RSDP',
+        },
+        {
+          title: 'A* Path Planning Algorithm',
+          description:
+            '➢ A* Path Planning Algorithm: Implemented an A* path planning algorithm in Python for a grid-based mobile robot environment. Integrated the algorithm into a graphical user interface to visualise the planned route.\n\n➢ GUI Interaction: Enabled users to place start points, goal points, and obstacle cells directly in the GUI. Used the GUI to display the generated shortest path clearly on the grid.\n\n➢ Path Search and Obstacle Avoidance: Planned a safe route from the start point to the goal while avoiding user-defined obstacles. Applied grid-based movement to support mobile robot path planning.',
+          imageUrl:
+            '/a.png',
+          link: 'https://github.com/lingfeng0219/A-Star-Algorithm',
         },
         {
           title: 'Research on Machine Vision-based Water Surface Search and Rescue Target Detection Technology',
           description:
-            'This study develops an automated detection system for water surface rescue by integrating YOLOv5 object detection with binocular vision. The system achieves 90% mAP in identifying targets like floating objects and boats under complex conditions. Through stereo matching and depth map analysis, it enables precise spatial localization and distance measurement, significantly improving rescue efficiency and accuracy.',
+            '➢ Implemented the YOLOv5 deep learning model for water surface target detection, achieving a 90% mAP in complex environments and ensuring outstanding recognition accuracy and real-time performance.\n\n➢ Employed binocular camera calibration and stereo matching algorithms to generate high-precision depth maps, establishing a reliable 3D data foundation for distance measurement.\n\n➢ Integrated detection outputs from YOLOv5 with depth map data, enabling accurate calculation of spatial coordinates and actual distances.',
           imageUrl:
-            'https://lingfeng0219.github.io/public/boat.png',
+            '/boat.png',
           link: 'https://github.com/lingfeng0219/Research-on-Machine-Vision-based-Water-Surface-Search-and-Rescue-Target-Detection-Technology',
         },
         {
@@ -55,22 +63,22 @@ const CONFIG = {
             'Designed a motor-driven wheeled 5-DOF fruit-picking robot in SolidWorks, integrating a 2-DOF mobile platform with a 3-DOF manipulator and gripper, and performed motion simulation. Engineered the system by selecting and performing strength calculations for all drive motors and sensors.',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          videoUrl: 'https://lingfeng0219.github.io/public/fruit.mp4',
+          videoUrl: '/fruit.mp4',
           link: 'https://github.com/lingfeng0219/Autonomous-Fruit-Picking-Robot',
         },
         {
-          title: 'AI and AR-based Fish Recognition Technology-Innovation and Entrepreneurship Training Program for College Students',
+          title: 'AI and AR-based Fish Recognition Technology',
           description:
             'Developed an AI-AR fish recognition system that achieved 93.33% validation accuracy by integrating YOLO object detection with Vuforia for real-time 3D visualization.',
           imageUrl:
-            'https://lingfeng0219.github.io/public/fish.jpg',
-          link: 'https://lingfeng0219.github.io/public/AI and AR-based Fish Recognition Technology.pdf',
+            '/fish.jpg',
+          link: '/AI and AR-based Fish Recognition Technology.pdf',
         },
         {
           title: '51 Microcontroller-based Digital Clock with Calibration',
           description:
             'Designed and built a digital clock using a 51 microcontroller, featuring a 6-digit display for 24-hour time. The system allows for real-time calibration through tactile buttons, enabling users to reset the seconds and adjust the hour and minute values.',
-          videoUrl: 'https://lingfeng0219.github.io/public/51.mp4',
+          videoUrl: '/51.mp4',
           link: 'https://github.com/lingfeng0219/51-Microcontroller-based-Digital-Clock-with-Calibration',
         },
       ],
@@ -101,7 +109,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://lingfeng0219.github.io/public/resume.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      '/resume.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'Python',
@@ -154,7 +162,8 @@ const CONFIG = {
       journalName: 'Journal of Marine Science and Engineering',
       authors: 'Shitu Chen, Ling Feng, Xuteng Bao, Zhe Jiang, Bowen Xing and Jingxiang Xu,',
       link: 'https://www.mdpi.com/2077-1312/12/3/477',
-      description: 'This study introduces a novel collective intelligence algorithm for USV path planning that integrates dynamic obstacle avoidance, path smoothing, and eight-directional current resistance. Simulation results demonstrate an 8% improvement in path optimization, 50% faster computation, and near-perfect dynamic obstacle avoidance compared to conventional algorithms.',
+      pdfLink: 'https://www.mdpi.com/2077-1312/12/3/477/pdf',
+      description: '- Path-Planning Algorithms Evaluation: Evaluated and developed USV path-planning algorithms for dynamic obstacle avoidance, current resistance, and path smoothness. Integrated a collective intelligence approach to improve safe and efficient navigation in complex water environments.\n\n- USV Path Planning Modeling: Developed a grid-based 2D model for unmanned surface vehicle navigation. Used a simplified point-mass model and expanded obstacle boundaries to improve safety.\n\n- Simulation and Optimization: Conducted MATLAB simulations using an improved artificial bee colony algorithm. Achieved shorter path length, faster optimization time, and nearly complete dynamic obstacle avoidance.',
     },
   ],
   // Display articles from your medium or dev account. (Optional)

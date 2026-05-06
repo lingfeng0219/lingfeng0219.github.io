@@ -25,6 +25,7 @@ export interface SanitizedExternalProject {
   imageUrl?: string;
   videoUrl?: string; // Add videoUrl field
   link: string;
+  pdfLink?: string;
 }
 
 export interface SanitizedExternalProjects {
@@ -98,6 +99,7 @@ export interface SanitizedPublication {
   journalName?: string;
   authors?: string;
   link?: string;
+  pdfLink?: string;
   description?: string;
 }
 

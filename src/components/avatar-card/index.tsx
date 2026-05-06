@@ -24,6 +24,9 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
   avatarRing,
   resumeFileUrl,
 }): React.JSX.Element => {
+  const bio =
+    'I am an MSc Robotics student at the University of Manchester. My experience covers autonomous mobile robots, computer vision, path planning, robot manipulation, machine learning and system testing.';
+
   return (
     <div className="card shadow-lg card-sm bg-base-100">
       <div className="grid place-items-center py-8">
@@ -74,6 +77,16 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
             {loading || !profile
               ? skeleton({ widthCls: 'w-48', heightCls: 'h-5' })
               : profile.bio}
+          </div>
+          <div className="mt-6 border-t border-base-300 pt-5 text-left">
+            <h6 className="text-sm font-bold text-base-content/80 mb-2">
+              Bio
+            </h6>
+            <p className="text-sm leading-relaxed text-base-content/70">
+              {loading || !profile
+                ? skeleton({ widthCls: 'w-full', heightCls: 'h-16' })
+                : bio}
+            </p>
           </div>
         </div>
         {resumeFileUrl &&
